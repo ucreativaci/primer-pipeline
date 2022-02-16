@@ -18,6 +18,7 @@ pipeline {
         
         stage('Deploy Application') {
             steps {
+                sh "rm -rf /tmp/proyecto-compilado/*"
                 sh "cp -rf /home/jenkins/pipeline-romell/bin/Release/net5.0/linux-x64/publish/* /tmp/proyecto-compilado"
             }
         }
