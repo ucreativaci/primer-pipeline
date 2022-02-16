@@ -1,22 +1,24 @@
 pipeline {
-    agent any
+    agent {
+        label "jenkins-worker1"
+    }
 
     stages {
-        stage('Compilacion del codigo') {
+        stage('Dotnet Verification') {
             steps {
-                sh "dotnet"
+                sh "dotnet --version"
             }
         }
         
-        stage('Ejecutar pruebas de vulnerabilidad') {
+        stage('Compile Application') {
             steps {
-                echo "Hello World1"
+                sh "dotnet publish --self-contained -r linux-x64 -c Release"
             }
         }
         
-        stage('Desplegar en AWS') {
+        stage('Deploy Application') {
             steps {
-                echo "Desplegando codigo en AWS..."
+                sh "cp -rf /home/jenkins/pipeline-romell/bin/Release/net5.0/linux-x64/publish/* /tmp/proyecto-compilado"
             }
         }
     }
