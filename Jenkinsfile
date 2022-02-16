@@ -12,7 +12,6 @@ pipeline {
         
         stage('Compile Application') {
             steps {
-                sh "rm -rf /home/jenkins/pipeline-romell/bin/Release/net5.0/linux-x64/publish/*"
                 sh "dotnet publish --self-contained -r linux-x64 -c Release"
             }
         }
