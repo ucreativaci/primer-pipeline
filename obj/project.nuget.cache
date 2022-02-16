@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "qNeAEc/cBknKjygAW2/gj+QUKnsILTRmWNOt9HQp/Hhx33jKUbB217iBlPrVSxATQ7+FgxMQMZTTH2Cvu/Hy9w==",
+  "success": true,
+  "projectFilePath": "/home/jenkins/pipeline-romell/pipeline-romell.csproj",
+  "expectedPackageFiles": [
+    "/home/jenkins/.nuget/packages/microsoft.netcore.app.runtime.linux-x64/5.0.14/microsoft.netcore.app.runtime.linux-x64.5.0.14.nupkg.sha512",
+    "/home/jenkins/.nuget/packages/microsoft.aspnetcore.app.runtime.linux-x64/5.0.14/microsoft.aspnetcore.app.runtime.linux-x64.5.0.14.nupkg.sha512"
+  ],
+  "logs": []
+}
