@@ -4,8 +4,7 @@ pipeline {
     stages {
         stage('Compilacion del codigo') {
             steps {
-                echo 'Hello World1'
-                echo 'mi nombre es Romell'
+                sh "dotnet"
             }
         }
         
