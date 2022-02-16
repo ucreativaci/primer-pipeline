@@ -14,5 +14,11 @@ pipeline {
                 echo "Hello World1"
             }
         }
+        
+        stage('Desplegar en AWS') {
+            steps {
+                echo "Desplegando codigo en AWS..."
+            }
+        }
     }
 }
