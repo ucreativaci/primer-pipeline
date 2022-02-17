@@ -22,6 +22,7 @@ pipeline {
                 sh "rm -rf /tmp/proyecto-compilado/*"
                 sh "cp -rf /tmp/workspace/primer-proyecto-romell/bin/Release/net5.0/linux-x64/publish/* /tmp/proyecto-compilado/"
                 sh "cp lanzar_aplicacion.sh /tmp/proyecto-compilado/"
+                sh "/tmp/proyecto-compilado/lanzar_aplicacion.sh"
             }
         }
     }
