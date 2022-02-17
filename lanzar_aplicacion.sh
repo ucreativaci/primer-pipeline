@@ -1,2 +1,2 @@
 #!/bin/sh
-dotnet /tmp/proyecto-compilado/pipeline-romell.dll
+cd /tmp/proyecto-compilado/ && dotnet pipeline-romell.dll
