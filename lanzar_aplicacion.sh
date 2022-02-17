@@ -1,1 +1,1 @@
-dotnet pipeline-romell.dll
+dotnet /tmp/proyecto-compilado/pipeline-romell.dll
