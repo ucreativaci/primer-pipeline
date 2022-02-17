@@ -32,7 +32,7 @@ namespace pipeline_romell
             {
                 endpoints.MapGet("/", async context =>
                 {
-                    await context.Response.WriteAsync("Aplication Dotnet 2");
+                    await context.Response.WriteAsync("Aplication Dotnet");
                 });
             });
         }
