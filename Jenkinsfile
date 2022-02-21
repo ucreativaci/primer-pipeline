@@ -14,5 +14,11 @@ pipeline {
                 echo "Hello World1"
             }
         }
+        
+        stage('Ejecutar pruebas de vulnerabilidad2') {
+            steps {
+                echo "Hello World2"
+            }
+        }
     }
 }
