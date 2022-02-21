@@ -32,7 +32,7 @@ namespace pipeline_romell
             {
                 endpoints.MapGet("/", async context =>
                 {
-                    await context.Response.WriteAsync("Potencial cambio 2");
+                    await context.Response.WriteAsync("Potencial cambio 3");
                 });
             });
         }
