@@ -16,6 +16,12 @@ pipeline {
             }
         }
         
+        stage('Branch Discovery') {
+            steps {
+                echo "Branch development pipeline triggered"
+            }
+        }
+        
         stage('Deploy Application') {
             steps {
                 sh "rm -rf /tmp/proyecto-compilado/*"
