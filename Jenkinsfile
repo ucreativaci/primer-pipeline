@@ -22,6 +22,13 @@ pipeline {
             }
         }
         
+        stage('Branch test') {
+            steps {
+                echo "TEST TRIGGER"
+            }
+        }
+        
+        
         stage('Deploy Application') {
             steps {
                 sh "rm -rf /tmp/proyecto-compilado/*"
