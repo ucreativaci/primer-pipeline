@@ -3,9 +3,9 @@ pipeline {
         label "jenkins-worker1"
     }
     
-    environment {
-        BRANCH_NAME = "${GIT_BRANCH}"
-    }
+//     environment {
+//         BRANCH_NAME = "${GIT_BRANCH}"
+//     }
 
     stages {
         stage('Dotnet Verification') {
@@ -16,7 +16,7 @@ pipeline {
         
         stage('Git branch print') {
             steps {
-                echo "dotnet ${BRANCH_NAME}"
+                echo "Branch: ${env.BRANCH_NAME}"
             }
         }
         
