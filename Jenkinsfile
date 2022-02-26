@@ -2,11 +2,21 @@ pipeline {
     agent {
         label "jenkins-worker1"
     }
+    
+    environment {
+        BRANCH_NAME = "${GIT_BRANCH}"
+    }
 
     stages {
         stage('Dotnet Verification') {
             steps {
                 sh "dotnet --version"
+            }
+        }
+        
+        stage('Git branch print') {
+            steps {
+                echo "dotnet ${BRANCH_NAME}"
             }
         }
         
