@@ -1,3 +1,4 @@
+// Hola
 pipeline {
     agent {
         label "jenkins-worker1"
